@@ -12,3 +12,4 @@ logging = True
 excludes = {}
 extra = ['/root/jenni/modules/']
 external = { '##vaperefugees': ['!'] }
+sasl = False
