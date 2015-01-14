@@ -1,0 +1,14 @@
+user = 'smallwatt/freenode'
+nick = 'smallwatt'
+host = 'hypermine.com'
+port = 6667
+channels = ['##vaperefugees']
+owner = 'scott@hypermine.com'
+password = '<changeme>'
+admins = [owner]
+exclude = ['adminchannel', 'chat', 'lispy', 'nws', 'rss', 'twss']
+helpers = {}
+logging = True
+excludes = {}
+extra = ['/root/jenni/modules/']
+external = { '##vaperefugees': ['!'] }
