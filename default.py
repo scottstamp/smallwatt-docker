@@ -1,12 +1,13 @@
 user = 'smallwatt/freenode'
 nick = 'smallwatt'
-host = 'hypermine.com'
+host = 'cerberus.hypermine.com'
 port = 6667
 channels = ['##vaperefugees']
 owner = 'scott@hypermine.com'
-password = '<changeme>'
+password = 'changepass'
 admins = [owner]
-exclude = ['adminchannel', 'chat', 'lispy', 'nws', 'rss', 'twss']
+forecastio_apikey = '4bd781b377742c28ee6bee4ed0f7c5b8'
+exclude = ['adminchannel', 'chat', 'lispy', 'rss', 'twss']
 helpers = {}
 logging = True
 excludes = {}

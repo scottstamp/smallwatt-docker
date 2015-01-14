@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -f Dockerfile
+RANDOM_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+IRCPASS=$(cat ircpass.secret)
+cat Dockerfile.tpl | sed "s/RANDOM_UUID/$RANDOM_UUID/" > Dockerfile
+sed -i s/changepass/$IRCPASS/g default.py
+docker build -t scottstamp/smallwatt .
+sed -i s/$IRCPASS/changepass/g default.py

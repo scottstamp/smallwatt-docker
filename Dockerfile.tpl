@@ -11,6 +11,6 @@ RUN apt-get install -y python python-pip git supervisor python-lxml python-beaut
 ADD default.py /root/.jenni/
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-RUN echo 6mZWcaSHne1GYjAIxo8Xaiz5FuF8rd53 >/dev/null && cd /root && git clone https://github.com/scottstamp/jenni.git
+RUN echo RANDOM_UUID >/dev/null && cd /root && git clone https://github.com/scottstamp/jenni.git
 
 CMD ["/usr/bin/supervisord"]
